@@ -1,0 +1,40 @@
+<form id="vacation-booking-form">
+    <h2>Book Your Dream Vacation</h2>
+    <section>
+      <h3>Destination</h3>
+      <label for="destination">Where are you going?</label>
+      <input type="text" id="destination" name="destination" required>
+    </section>
+    <section>
+      <h3>Travel Dates</h3>
+      <label for="departure-date">Departure Date:</label>
+      <input type="date" id="departure-date" name="departure-date" required>
+      <label for="return-date">Return Date:</label>
+      <input type="date" id="return-date" name="return-date" required>
+    </section>
+    <section>
+      <h3>Travelers</h3>
+      <label for="adults">Number of Adults:</label>
+      <input type="number" id="adults" name="adults" min="1" required>
+      <label for="children">Number of Children:</label>
+      <input type="number" id="children" name="children" min="0" required>
+    </section>
+    <section>
+      <h3>Accommodation</h3>
+      <label for="hotel-type">Hotel Type:</label>
+      <select id="hotel-type" name="hotel-type" required>
+        <option value="">Select Hotel Type</option>
+        <option value="luxury">Luxury</option>
+        <option value="budget">Budget</option>
+        <option value="mid-range">Mid-Range</option>
+      </select>
+    </section>
+    <section>
+      <h3>Contact Information</h3>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </section>
+    <button type="submit">Book Now</button>
+  </form>
